@@ -1,0 +1,76 @@
+﻿<!DOCTYPE html> 
+<html>
+	<head> 
+		<meta charset="utf-8"> 
+		<title>Кот Барбоскин</title> 
+	</head> 
+	<body> 		
+		<img src = "cat.jpg" width="200" height="250"> 
+					<!-- ширина="200" высота="250" -->
+		<h1> Привет! Я кот Барбоскин!</h1> 
+		<button onClick="myScript_1()">Акинатор</button>
+		<button onClick="myScript_2()">Тестирование</button>
+		
+		<script src="https://code.jquery.com/jquery-2.1.0.js"></script>
+		<script>
+			function myScript_1() { // Акинатор
+				if (confirm("Ваш персонаж круглый?")) { // Если наш персонаж круглый, то
+					if (confirm("Это колобок?")) { 
+						alert("Ура! Я угадал!");
+					}
+					else {
+						alert("Я проиграл:(");
+					}
+				}
+				else if (confirm("Ваш персонаж хитрый?")) {
+					if (confirm("Это лиса?")) { 
+						alert("Ура! Я угадал!");
+					}
+					else {
+						alert("Я проиграл:(");
+					}
+				}
+				else if (confirm("Ваш персонаж умеет готовить?")) {
+					if (confirm("Это Бабушка?")) { 
+						alert("Ура! Я угадал!");
+					}
+					else {
+						alert("Я проиграл:(");
+					}
+				}
+				else {
+					alert("Я проиграл:(");
+				}
+			}
+			
+			function myScript_2() { // Тестирование
+				while (!answer) {
+					var answer = true;
+
+					/* проверка на знание number */	
+					if (typeof(23)!= prompt("Какой тип данных у переменной a = 23?")) { 
+						answer = false; 
+					}
+
+					/* проверка на знание boolean */	
+					if (typeof(true)!= prompt("Какой тип данных у переменной a = true?")) { 
+						answer = false; 
+					}
+
+					/* проверка на знание string */	
+					if (typeof("Яблоко")!= prompt("Какой тип данных у переменной a = \"Яблоко\"?")) { 
+						answer = false; 
+					}
+
+					/* проверка на знание undefined */	
+					if (typeof(undefined)!= prompt("Какой тип данных у переменной a = undefined?")) { 
+						answer = false; 
+					}		
+				}
+			}
+		</script> 
+	</body>
+</html>
+
+
+

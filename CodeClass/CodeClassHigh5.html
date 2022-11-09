@@ -1,0 +1,43 @@
+﻿<html>
+<head>
+<meta charset="UTF-8">
+<title>Виселица</title>
+</head>
+	<body>
+	<img src = "gallows.jpg"> 
+		<h1>Добро пожаловать в игру "Виселица"!</h1>
+		<script>
+		alert ("Привет!");
+			var words = ["Каша", "Огурец", "Неожиданность", "Слово", "Земля", "Счастье"];
+			
+			var word = words[Math.floor(Math.random()* words.length)];
+			
+			var answers = [];
+			for (var i = 0; i < word.length; i++) {
+			answers[i] = "_";
+			}
+			
+			var letters = word.length;
+			
+			while (letters > 0) {
+			alert (answers.join(" "));
+			var guess = prompt ("Угадайте букву или нажмите Отменя для выхода");
+			if (guess === null) {
+			break;
+			} else if (guess.length !==1) {
+			alert ("Введите только одну букву!");
+			} else {
+			for (var j = 0; j <word.length; j++) {
+			if (word[j] === guess) {
+			answers[j] = guess;
+			letters--;
+			}			}			}			}
+			alert (answers.join(" "));
+			alert ("Отлично! Было загадано слово " + word);
+		</script>
+	</body>
+</html>
+
+
+
+
