@@ -1,0 +1,46 @@
+* {
+  box-sizing: border-box;
+}
+
+img {
+  margin: 0 auto;
+  max-width: 330px;
+}
+
+.wrap {
+  max-width: 1140px;
+  margin: 100px auto;
+}
+
+.wedding {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.wedding__item {
+  flex-basis: 340px;
+  padding: 20px;
+}
+
+.dots-style {
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  list-style: none;
+}
+
+.dots-style button {
+  background: #eddfd477;
+  border: none;
+  border-radius: 50%;
+  font-size: 0;
+  height: 15px;
+  width: 15px;
+  margin: 5px;
+  outline: none;
+}
+
+.dots-style li[class="slick-active"] button {
+  background: #eac8be;
+}

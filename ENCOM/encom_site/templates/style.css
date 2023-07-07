@@ -1,0 +1,33 @@
+/* start Images align */
+.mx-auto
+{
+  margin: auto;
+}
+
+.d-block
+{
+  display:block;  
+}
+/* end Images align */
+
+/* start main */
+  /* start fake-img */
+    .fakeimg 
+    {
+      height: 200px;
+      background: #aaa;
+    }
+  /* end fake-img */
+/* end main */
+
+/* start courses pages */
+  /* start chapters-cards */
+.cards-size
+{
+  width: 400px;
+  height: 400px;
+  padding-top: 11%;
+}
+
+  /* end chapters-cards */
+/* end courses pages */
